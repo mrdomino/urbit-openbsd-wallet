@@ -1,0 +1,3 @@
+all: ent
+
+.PHONY: all
