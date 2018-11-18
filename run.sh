@@ -1,7 +1,5 @@
 #!/bin/sh
 
-make ent
-
 echo -n 'Passphrase: '
 stty -echo
 read phrase
