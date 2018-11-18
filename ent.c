@@ -1,5 +1,6 @@
 #include <err.h>
 #include <stdio.h>
+#include <string.h>
 #include <unistd.h>
 
 #define ENY(S) \
@@ -23,5 +24,6 @@ main(void)
 	ENY(64);
 	ENY(64);
 
+	explicit_bzero(buf, sizeof(buf));
 	return 0;
 }
