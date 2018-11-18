@@ -1,3 +1,4 @@
+'use strict';
 const kg = require('urbit-key-generation')
 const ob = require('urbit-ob')
 const readline = require('readline')
@@ -34,7 +35,7 @@ const readShip = function(passphrase, i, done) {
 
 rl.question('passphrase: ', (pas) => {
 	readShip(pas, 0, async () => {
-		wallets = {}
+		var wallets = {}
 		for (var i = 0, n = ships.length; i < n; i++) {
 			const ship = ships[i]
 			const pat = ob.patp(ship)
